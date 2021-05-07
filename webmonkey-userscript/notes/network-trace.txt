@@ -1,0 +1,298 @@
+// -----------------------------------------------------------------------------
+
+https://www.bbc.co.uk/iplayer/episode/m000tzg6/louis-theroux-shooting-joe-exotic
+https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/m000tzg4/format/json/jsfunc/JS_callbacks0
+
+// -----------------------------------------------------------------------------
+
+JS_callbacks0({
+  "media": [{
+    "service": "[deprecated]",
+    "kind": "captions",
+    "type": "application/ttaf+xml",
+    "encoding": "",
+    "expires": "2022-04-05T21:30:00Z",
+    "connection": [{
+      "priority": "10",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-sub-uk-live.akamaized.net/iplayer/subtitles/ng/modav/bUnknown-190ed88a-394d-463c-ab93-d6497a1399ee_m000tzg4_pips-pid-m000tzg4_1617618142667.xml?__gda__=1620375050_09b780e82b60c23dbaba4f812c32feb8",
+      "transferFormat": "plain",
+      "dpw": "75"
+    }, {
+      "priority": "10",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-sub-uk-live.akamaized.net/iplayer/subtitles/ng/modav/bUnknown-190ed88a-394d-463c-ab93-d6497a1399ee_m000tzg4_pips-pid-m000tzg4_1617618142667.xml?__gda__=1620375050_09b780e82b60c23dbaba4f812c32feb8",
+      "transferFormat": "plain",
+      "dpw": "75"
+    }, {
+      "priority": "20",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-sub-uk.live.cf.md.bbci.co.uk/iplayer/subtitles/ng/modav/bUnknown-190ed88a-394d-463c-ab93-d6497a1399ee_m000tzg4_pips-pid-m000tzg4_1617618142667.xml?Expires=1620375050&Signature=NkpRfYUpzZecB~TGeEX1tua4ZT-VURjQXZy9adtfG30S8Fkau~Ksm6AQ9cExZDzP3TrAl4WJ~mRVMrPgGgviCpglI25uXszueSLzmUDIrfcD~7aD3Np5dQ0PVBV2YbLlAsm73aXVFHI0FXQopbaMvWv43kpSjmQrHqj9zCzaL~9HEO51SkoMiu6vfrEpRd0Ok5pAS9Bfap4vg~Gt5S7EUzm0xmsyvpjLioCVgrfxF3RwkaBycTU9LgxQmLkX6483l2bOM9ob48sq8QpqFQRFVbnqIRPLNABzgdQ4pl6tNEJ33hObThgjUNN1EJTa7KdpAjxDD5LmzCkLXu5VXnm3lw__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "plain",
+      "dpw": "25"
+    }, {
+      "priority": "20",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-sub-uk.live.cf.md.bbci.co.uk/iplayer/subtitles/ng/modav/bUnknown-190ed88a-394d-463c-ab93-d6497a1399ee_m000tzg4_pips-pid-m000tzg4_1617618142667.xml?Expires=1620375050&Signature=m1yL1-vxsuR70l6HO9peDj0zy6idvQh1wLT3OmT4bxH~O~JDT6XJV918dHkAg3MaOK-KuNm1ouUs4pl1x39v62Md0wm5yZ2TmymSB5MKHpNQytIr4kQZm478ATiq7dA8ZgblYvOf9PpDhrN~F1xBuoj4WjN967k0IywZuv96mGzkk6Ein1oCDUuW9Hxue0j6TrZTrgngtQbswGnxm31y6zy33if92HVkNplOnBknh7wvAEuE9HNdlcVXXf8rwaav6QGGUX7JJpnRAD-kz4TzwE4wm~usYofq5-esMticNMgpTk-wYZxDmKQgPII9pQPEcQrni7maX9JEUSh16lhAJQ__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "plain",
+      "dpw": "25"
+    }]
+  }, {
+    "service": "[deprecated]",
+    "kind": "thumbnails",
+    "type": "image/jpeg",
+    "encoding": "",
+    "expires": "2022-04-05T21:30:00Z",
+    "connection": [{
+      "priority": "10",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-thumb-uk-live.akamaized.net/thumbnail_v1/945584-pips-pid-m000tzg4/vf_pips-pid-m000tzg4_thumbnail_manifest_eca5d412-6740-4090-922a-34948d689d5b.xml?__gda__=1620375050_71fc074b9fc0f4579cdd5415d8492beb",
+      "transferFormat": "plain",
+      "dpw": "75"
+    }, {
+      "priority": "10",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-thumb-uk-live.akamaized.net/thumbnail_v1/945584-pips-pid-m000tzg4/vf_pips-pid-m000tzg4_thumbnail_manifest_eca5d412-6740-4090-922a-34948d689d5b.xml?__gda__=1620375050_71fc074b9fc0f4579cdd5415d8492beb",
+      "transferFormat": "plain",
+      "dpw": "75"
+    }, {
+      "priority": "30",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-thumb-uk.live.cf.md.bbci.co.uk/thumbnail_v1/945584-pips-pid-m000tzg4/vf_pips-pid-m000tzg4_thumbnail_manifest_eca5d412-6740-4090-922a-34948d689d5b.xml?Expires=1620375050&Signature=Gg6JspXMqBSF4A4ACxzPuTMFdTbEznAClWSgy6VswOsRz0uUrD~iTA72C4wur5ArLVOJzm0feQDu-q7bPPSK~e-WMoSZaAcGUyEfT~LQLJEi~UycDfQd7y9E~IJ5LpcOKKynjWGu2xNyaOeY4IyEd9Q5BEhsuiltcVBl7C64B8L-SBNQYMnKZZ3pmqh3dnT8be5biGd-O4GN-WEC20JckJ5ntnCDVCNvGQyW1hHO1DSLrB7Xl0o2u5Xwl7wPAJHnD49sFtrGfUF6V5pQNYwW8OaqX0VKsePs-u2S9YSht8~YwceH2y979QILuUttNWsyodmCLPqz9uUqp4EkdKXUuw__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "plain",
+      "dpw": "25"
+    }, {
+      "priority": "30",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-thumb-uk.live.cf.md.bbci.co.uk/thumbnail_v1/945584-pips-pid-m000tzg4/vf_pips-pid-m000tzg4_thumbnail_manifest_eca5d412-6740-4090-922a-34948d689d5b.xml?Expires=1620375050&Signature=UEtf1yyVu6ea9H2svMnbAWpmWDYgzNMmRPkP-8rKFx-BRQN0SqxEOEXE7yfgR70BhC8Lql2gUJ-P5iAKLF6W6-i3MWnBneUK5AojDVPwPDN8fRWyabl5COg9lTfTuZCoDlkOlnQwONuw-sMItqI05hS8Z~2Aw8wCUy6MBkCbU4DiDtYqF74zQyYllPrYCYnSyezESLIKXSBKdCG0q1-ujf2Q7e8Qn5xG4-1-H8ZMzigrzw4kBIVzyvs3oWaBOJ-1NDIN0KFPOzhcdnDSGfOOf8s8MZ8xRCP3SwKyBUvi7XxSM5jqDn0cElMnGZ2RQZGnb-Jey7NY5RifYrx-Xge7pg__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "plain",
+      "dpw": "25"
+    }]
+  }, {
+    "width": "1920",
+    "bitrate": "8490",
+    "height": "1080",
+    "service": "[deprecated]",
+    "kind": "video",
+    "type": "video/mp4",
+    "encoding": "h264",
+    "expires": "2022-04-05T21:30:00Z",
+    "connection": [{
+      "priority": "10",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-hls-uk-live.akamaized.net/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?__gda__=1620375050_40ff7d866621dcdf5fcfd7ea71eb3bf1",
+      "transferFormat": "hls",
+      "dpw": "15"
+    }, {
+      "priority": "10",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-hls-uk-live.akamaized.net/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?__gda__=1620375050_40ff7d866621dcdf5fcfd7ea71eb3bf1",
+      "transferFormat": "hls",
+      "dpw": "15"
+    }, {
+      "priority": "10",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-dash-uk-live.akamaized.net/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_dash_master.mpd?__gda__=1620375050_1f387d28346b3b36522498d1c0ec07a0",
+      "transferFormat": "dash",
+      "dpw": "15"
+    }, {
+      "priority": "10",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_akamai",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-dash-uk-live.akamaized.net/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_dash_master.mpd?__gda__=1620375050_1f387d28346b3b36522498d1c0ec07a0",
+      "transferFormat": "dash",
+      "dpw": "15"
+    }, {
+      "priority": "30",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-hls-uk.live.cf.md.bbci.co.uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?Expires=1620375050&Signature=p7TbJktSHXZSnhteXLrVf-Z4~mcgR~HquxEafgBt3jrJ2-dHnwcEYarKI2gVve0pb58Zrxv43WIL6NpEws-ZG3ElcLETdYg~YC8QS3miUdN5gjAA4W820Tr-mor-RpI5RpBMZKNJi0yd-LCKtcUiIRUOLxE1t6Geq5GxHwxZSrCcbZPORswdpDnDnYQDglDq0Z-3H0nMPjdRz6Ukv6SHpaSEXCz-6MRY11Sl129iRfEkUrvRRzM5zl8wysz~OHqimahx3WO6yiewASxSAWyhSx~U5zy~QcNnGcKyhDg-givx2K47UisRbje0OqqnKUh7lYsHOaCD4vjAAFjayQ3JJg__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "hls",
+      "dpw": "5"
+    }, {
+      "priority": "30",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-hls-uk.live.cf.md.bbci.co.uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?Expires=1620375050&Signature=iEfDnVNaC4DQAOIsIQHntGX0JGHNwrT2cUchoDVrgPt9S8tnS1SuufCPTP0V8capBaGnvdMoviulejEM9FhxcV9AaCb0k9RLqNxD9IYCzNsNdQqGPYsvJK470txF6B48xJ7gjh-jAKiQtp-k1hc6cpAMpue9iD8GUiIiWBWUhVPlmUc9iy78grJBpooH2N~nSaPEVwmVSyMaXjzTatwikdtCo921C~~soOLld4pu8TKrwjBPgJ7LR-4ifxu-hnVZxXCV4FGdIwtMoxmPxhfO9fHsWnJe~z4HUtw77V~zwHGui7VXuTZHyuRDjJ6v3NY9NPYE0BjJBYA2WDd8Jmm6uw__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "hls",
+      "dpw": "5"
+    }, {
+      "priority": "30",
+      "protocol": "http",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "http://vod-dash-uk.live.cf.md.bbci.co.uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_dash_master.mpd?Expires=1620375050&Signature=Wacpq2A76nFzsRkoWUIupwe00yLnisopa7pCjeaWACxfZ~zxmK-6EXfQJgLx9FVPly0AZDnX0xsX7XgtjoKQk5TDRHA88iRSLPtHYJnLGeN36ER18NHnyD7rHcspxfI8A8NcMfvucN03lr5Kgzk0MIL2OeiyqcSw7DMPm1tM9T9k-QzN3kDIAl56HOOAod-8CRtweP-xYsvAPst9Uv2VLR9hkoToiIzo91vLccNE~QX2jN4zD19J7nyCCap9lK82Ipc7bC6us0f27G4dUMTMucMh01GHwMh~hdDv5oikPlDNMyFIXLfYbXSLWySz3WR432-jLCOA-mvrCabEWkNHmA__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "dash",
+      "dpw": "5"
+    }, {
+      "priority": "30",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-dash-uk.live.cf.md.bbci.co.uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_dash_master.mpd?Expires=1620375050&Signature=GyxjomvuM8aTB-4FjWf0znZKBELHigpU4mWhCgUJ7QIDqcEfs47XAQUxcG0W83WxpVX7OMx-biesVTE9clM0sHU8QKxg-DEZzlnwEUG2a5L4q6hNnXIY--OBP~FZlADM4mcjLQCgFUdZyrJlDcjkjiMISRz~2mwX6WYRFJqsGbuiAIhMDjbSRMC6ffJTsjqeUTbwoxK2SYzsf8GhKGpLO-S7d0lpK9AeXdWzL4LSFB4W-xur98CE8grh~uz9wpJlYl9oW6nirQlg-pt3rA1SXJOpm0DidvGPOKBsMe1LTskL-pTcQDyiYWQTY6tLKDInlZ7kV0CecUN02DXwyWUlBg__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "dash",
+      "dpw": "5"
+    }, {
+      "priority": "40",
+      "protocol": "http",
+      "authExpiresOffset": 43200,
+      "supplier": "mf_bidi",
+      "authExpires": "2021-05-07T14:10:50Z",
+      "href": "http://mm.bidi.bbc.co.uk/vod-hls-uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?at=j0JRDomq5d12f44b332d111dae9f6555a454539674c708d05c1b3efcc3e80",
+      "transferFormat": "hls",
+      "dpw": "80"
+    }, {
+      "priority": "40",
+      "protocol": "https",
+      "authExpiresOffset": 43200,
+      "supplier": "mf_bidi",
+      "authExpires": "2021-05-07T14:10:50Z",
+      "href": "https://mm.bidi.bbc.co.uk/vod-hls-uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?at=TKUHLxxOedaee6d8d188cd0bc39c89d424b358de64513f205c1b3efcc3e80",
+      "transferFormat": "hls",
+      "dpw": "80"
+    }, {
+      "priority": "50",
+      "protocol": "http",
+      "authExpiresOffset": 43200,
+      "supplier": "mf_vbidi",
+      "authExpires": "2021-05-07T14:10:50Z",
+      "href": "http://c1b1bteaips.sp.bidi.live.bbc.co.uk/vod-hls-uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?at=EvmRoE7Ba9de3382cd6c84474a6f183b74994cb5b5bb9ee95c1b3efcc3e80",
+      "transferFormat": "hls",
+      "dpw": "0"
+    }, {
+      "priority": "50",
+      "protocol": "https",
+      "authExpiresOffset": 43200,
+      "supplier": "mf_vbidi",
+      "authExpires": "2021-05-07T14:10:50Z",
+      "href": "https://c1b1bteaips.sp.bidi.live.bbc.co.uk/vod-hls-uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?at=Oc8qNGkj86b56365ff14914175129f1d816272e70015b25a5c1b3efcc3e80",
+      "transferFormat": "hls",
+      "dpw": "0"
+    }, {
+      "priority": "40",
+      "protocol": "http",
+      "authExpiresOffset": 43200,
+      "supplier": "mf_bidi",
+      "authExpires": "2021-05-07T14:10:50Z",
+      "href": "http://mm.bidi.bbc.co.uk/vod-dash-uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_dash_master.mpd?at=OdKM5SDB0f9008f532dc1b29382b9bd120efa18e0c58fae15c1b3efcc3e80",
+      "transferFormat": "dash",
+      "dpw": "80"
+    }, {
+      "priority": "40",
+      "protocol": "https",
+      "authExpiresOffset": 43200,
+      "supplier": "mf_bidi",
+      "authExpires": "2021-05-07T14:10:50Z",
+      "href": "https://mm.bidi.bbc.co.uk/vod-dash-uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_dash_master.mpd?at=nVLTtHZS4b1f78d50bf9d3eef7dae77a58e17b4837259f345c1b3efcc3e80",
+      "transferFormat": "dash",
+      "dpw": "80"
+    }]
+  }],
+  "disclaimer": "This code and data form part of the BBC iPlayer content protection system. Tampering with, removal of, misuse of, or unauthorised use of this code or data constitutes circumvention of the BBC's content protection measures and may result in legal action. BBC (C) 2021."
+});
+
+// -----------------------------------------------------------------------------
+
+{
+  const callback_function_name = 'JS_callbacks0'
+
+  const video_id = window.__IPLAYER_REDUX_STATE__.versions[0].id
+
+  const url = `https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/${video_id}/format/json/jsfunc/${callback_function_name}`
+
+  window[callback_function_name] = function(data) {
+    console.log(JSON.stringify(data, null, 2))
+  }
+
+  const script = document.createElement('script')
+  script.setAttribute('src', url)
+  document.body.appendChild(script)
+}
+
+// -----------------------------------------------------------------------------
+
+observations:
+=============
+
+* I tested the (above) HLS stream URLs; annectodally, at this moment and from this (UK VPN) IP..
+  - most don't work
+  - the following do work:
+
+    {
+      "priority": "30",
+      "protocol": "https",
+      "authExpiresOffset": 21600,
+      "supplier": "mf_cloudfront",
+      "authExpires": "2021-05-07T08:10:50Z",
+      "href": "https://vod-hls-uk.live.cf.md.bbci.co.uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?Expires=1620375050&Signature=iEfDnVNaC4DQAOIsIQHntGX0JGHNwrT2cUchoDVrgPt9S8tnS1SuufCPTP0V8capBaGnvdMoviulejEM9FhxcV9AaCb0k9RLqNxD9IYCzNsNdQqGPYsvJK470txF6B48xJ7gjh-jAKiQtp-k1hc6cpAMpue9iD8GUiIiWBWUhVPlmUc9iy78grJBpooH2N~nSaPEVwmVSyMaXjzTatwikdtCo921C~~soOLld4pu8TKrwjBPgJ7LR-4ifxu-hnVZxXCV4FGdIwtMoxmPxhfO9fHsWnJe~z4HUtw77V~zwHGui7VXuTZHyuRDjJ6v3NY9NPYE0BjJBYA2WDd8Jmm6uw__&Key-Pair-Id=K2VWLYKQ4HU1FJ",
+      "transferFormat": "hls",
+      "dpw": "5"
+    }, {
+      "priority": "40",
+      "protocol": "https",
+      "authExpiresOffset": 43200,
+      "supplier": "mf_bidi",
+      "authExpires": "2021-05-07T14:10:50Z",
+      "href": "https://mm.bidi.bbc.co.uk/vod-hls-uk/usp/auth/vod/piff_abr_full_hd/13ed25-m000tzg4/vf_m000tzg4_c8318751-3d80-413b-a658-3c7247158fe4.ism/pc_hd_abr_v2_hls_master.m3u8?at=TKUHLxxOedaee6d8d188cd0bc39c89d424b358de64513f205c1b3efcc3e80",
+      "transferFormat": "hls",
+      "dpw": "80"
+    }
+
+  - does NOT require a Referer header
+
+geo-fence:
+==========
+
+* the following servers require that the user be in the UK:
+  - API endpoint
+  - video hosts
+
+login:
+======
+* user does NOT need to be logged in to:
+  - get 'video_id' from page on website
+  - use 'video_id' to obtain HLS video URLs
+  - load HLS video URL
+
+// -----------------------------------------------------------------------------

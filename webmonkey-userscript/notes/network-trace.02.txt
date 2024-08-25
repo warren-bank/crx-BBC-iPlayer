@@ -1,0 +1,45 @@
+{
+  const id = window.__IPLAYER_REDUX_STATE__.versions[0].id
+
+  const url = `https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/${id}/format/json/cors/1`
+
+  fetch(url).then(res => res.json()).then(data => {
+    console.log(data)
+
+    try {
+      let all_videos = []
+      let all_texts  = []
+      let video, text
+
+      if (!data || !data.media || !data.media.length) throw ''
+
+      for (let media of data.media) {
+        if (!media || !media.connection || !media.connection.length) continue
+
+        if (media.kind === 'video')
+          all_videos = all_videos.concat(media.connection)
+
+        if (media.kind === 'captions')
+          all_texts = all_texts.concat(media.connection)
+      }
+
+      video = all_videos.find(obj => obj.transferFormat === 'hls'  && obj.protocol === 'http')  ||
+              all_videos.find(obj => obj.transferFormat === 'hls'  && obj.protocol === 'https') ||
+              all_videos.find(obj => obj.transferFormat === 'dash' && obj.protocol === 'http')  ||
+              all_videos.find(obj => obj.transferFormat === 'dash' && obj.protocol === 'https')
+
+      text =  all_texts.find(obj => obj.transferFormat === 'plain' && obj.protocol === 'http')  ||
+              all_texts.find(obj => obj.transferFormat === 'plain' && obj.protocol === 'https')
+
+      if (!video || !video.href || !text || !text.href) throw ''
+
+      video = video.href
+      text  = text.href + '#subtitles.ttml'
+
+      console.log( {all_videos, all_texts, video, text} )
+    }
+    catch(e) {
+      console.log('error', e)
+    }
+  })
+}

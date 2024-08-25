@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BBC iPlayer
 // @description  Play media in external player.
-// @version      1.0.1
+// @version      1.0.2
 // @match        *://bbc.co.uk/iplayer/*
 // @match        *://*.bbc.co.uk/iplayer/*
 // @icon         https://iplayer-web.files.bbci.co.uk/page-builder/44.2.1/img/icons/favicon.ico
@@ -54,6 +54,12 @@ var constants = {
     "dash":                        "application/dash+xml",
     "mp4":                         "video/mp4"
   }
+}
+
+// ----------------------------------------------------------------------------- global state
+
+var state = {
+  "vtt_url": null
 }
 
 // ----------------------------------------------------------------------------- helpers
@@ -255,29 +261,38 @@ var sort_media_formats = function(formats) {
 }
 
 var process_jsonp_data = function(data) {
-  var formats = []
+  var formats = {
+    video:    [],
+    captions: []
+  }
   var media, format
 
   if (data && ('object' === (typeof data)) && Array.isArray(data.media) && data.media.length) {
     for (var i=0; i < data.media.length; i++) {
       media = data.media[i]
 
-      if (media && ('object' === (typeof media)) && (media.kind === 'video') && Array.isArray(media.connection) && media.connection.length) {
+      if (media && ('object' === (typeof media)) && Array.isArray(media.connection) && media.connection.length) {
         for (var i2=0; i2 < media.connection.length; i2++) {
           format = media.connection[i2]
 
-          if (format && ('object' === (typeof format)) && format.href && format.transferFormat && constants.transfer_format[format.transferFormat]) {
-            formats.push(format)
+          if (format && ('object' === (typeof format)) && format.href) {
+            if ((media.kind === 'video') && format.transferFormat && constants.transfer_format[format.transferFormat])
+              formats.video.push(format)
+            else if (media.kind === 'captions')
+              formats.captions.push(format)
           }
         }
       }
     }
   }
 
-  if (formats.length)
-    sort_media_formats(formats)
+  if (formats.video.length)
+    sort_media_formats(formats.video)
 
-  return formats
+  if (formats.captions.length)
+    state.vtt_url = formats.captions[0].href + '#subtitles.ttml'
+
+  return formats.video
 }
 
 var get_media_formats = function(callback) {
@@ -359,7 +374,7 @@ var attach_button_event_handlers_to_listitem = function(li, format) {
   button_start_media.addEventListener('click', function() {
     var video_url   = format.href
     var video_type  = format_to_mimetype(format)
-    var vtt_url     = null
+    var vtt_url     = state.vtt_url
     var referer_url = unsafeWindow.location.href
 
     process_video_url(video_url, video_type, vtt_url, referer_url)
@@ -373,7 +388,7 @@ var attach_button_event_handlers_to_listitem = function(li, format) {
 var insert_webcast_reloaded_div_to_listitem = function(li, format) {
   var block_element = li.querySelector('div.' + constants.dom_classes.div_media_summary)
   var video_url     = format.href
-  var vtt_url       = null
+  var vtt_url       = state.vtt_url
   var referer_url   = unsafeWindow.location.href
 
   insert_webcast_reloaded_div(block_element, video_url, vtt_url, referer_url)

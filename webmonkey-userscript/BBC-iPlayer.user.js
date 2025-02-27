@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name         BBC iPlayer
 // @description  Play media in external player.
-// @version      1.0.2
-// @match        *://bbc.co.uk/iplayer/*
+// @version      2.0.0
 // @match        *://*.bbc.co.uk/iplayer/*
 // @icon         https://iplayer-web.files.bbci.co.uk/page-builder/44.2.1/img/icons/favicon.ico
 // @run-at       document_end
@@ -20,7 +19,7 @@
 
 var user_options = {
   "webmonkey": {
-    "post_intent_redirect_to_url":  null
+    "post_intent_redirect_to_url":  null // "about:blank"
   },
   "greasemonkey": {
     "redirect_to_webcast_reloaded": true,
@@ -48,7 +47,6 @@ var constants = {
   "img_urls": {
     "base_webcast_reloaded_icons": "https://github.com/warren-bank/crx-webcast-reloaded/raw/gh-pages/chrome_extension/2-release/popup/img/"
   },
-  "jsonp_callback":                "JS_callbacks0",
   "transfer_format": {
     "hls":                         "application/x-mpegurl",
     "dash":                        "application/dash+xml",
@@ -60,6 +58,118 @@ var constants = {
 
 var state = {
   "vtt_url": null
+}
+
+// ----------------------------------------------------------------------------- CSP
+
+// add support for CSP 'Trusted Type' assignment
+var add_default_trusted_type_policy = function() {
+  if (typeof unsafeWindow.trustedTypes !== 'undefined') {
+    try {
+      var passthrough_policy = function(string) {return string}
+
+      unsafeWindow.trustedTypes.createPolicy('default', {
+          createHTML:      passthrough_policy,
+          createScript:    passthrough_policy,
+          createScriptURL: passthrough_policy
+      })
+    }
+    catch(e) {}
+  }
+}
+
+// ----------------------------------------------------------------------------- helpers (xhr)
+
+var serialize_xhr_body_object = function(data) {
+  if (typeof data === 'string')
+    return data
+
+  if (!(data instanceof Object))
+    return null
+
+  var body = []
+  var keys = Object.keys(data)
+  var key, val
+  for (var i=0; i < keys.length; i++) {
+    key = keys[i]
+    val = data[key]
+    val = unsafeWindow.encodeURIComponent(val)
+
+    body.push(key + '=' + val)
+  }
+  body = body.join('&')
+  return body
+}
+
+var download_text = function(url, headers, data, withCredentials, callback) {
+  if (data) {
+    if (!headers)
+      headers = {}
+    if (!headers['content-type'])
+      headers['content-type'] = 'application/x-www-form-urlencoded'
+
+    switch(headers['content-type'].toLowerCase()) {
+      case 'application/json':
+        data = JSON.stringify(data)
+        break
+
+      case 'application/x-www-form-urlencoded':
+      default:
+        data = serialize_xhr_body_object(data)
+        break
+    }
+  }
+
+  var xhr    = new unsafeWindow.XMLHttpRequest()
+  var method = data ? 'POST' : 'GET'
+
+  xhr.open(method, url, true, null, null)
+  xhr.withCredentials = !!withCredentials
+
+  if (headers && (typeof headers === 'object')) {
+    var keys = Object.keys(headers)
+    var key, val
+    for (var i=0; i < keys.length; i++) {
+      key = keys[i]
+      val = headers[key]
+      xhr.setRequestHeader(key, val)
+    }
+  }
+
+  xhr.onload = function(e) {
+    if (xhr.readyState === 4) {
+      if ((xhr.status >= 200) && (xhr.status < 300)) {
+        callback(null, xhr.responseText)
+      }
+    }
+    callback(new Error())
+  }
+
+  xhr.onerror = function(e) {
+    callback(new Error())
+  }
+
+  if (data)
+    xhr.send(data)
+  else
+    xhr.send()
+}
+
+var download_json = function(url, headers, data, withCredentials, callback) {
+  if (!headers)
+    headers = {}
+  if (!headers.accept)
+    headers.accept = 'application/json'
+
+  download_text(url, headers, data, withCredentials, function(error, text){
+    try {
+      if (error)
+        callback(error)
+      else
+        callback(null, JSON.parse(text))
+    }
+    catch(e) {}
+  })
 }
 
 // ----------------------------------------------------------------------------- helpers
@@ -88,7 +198,7 @@ var get_webcast_reloaded_url = function(video_url, vtt_url, referer_url, force_h
 
   webcast_reloaded_base = {
     "https": "https://warren-bank.github.io/crx-webcast-reloaded/external_website/index.html",
-    "http":  "http://webcast-reloaded.surge.sh/index.html"
+    "http":  "http://webcast-reloaded.frii.site/index.html"
   }
 
   webcast_reloaded_base = (force_http)
@@ -260,7 +370,7 @@ var sort_media_formats = function(formats) {
   formats.sort(sort_comparison)
 }
 
-var process_jsonp_data = function(data) {
+var process_api_response = function(data) {
   var formats = {
     video:    [],
     captions: []
@@ -299,25 +409,44 @@ var get_media_formats = function(callback) {
   if (
        !unsafeWindow.__IPLAYER_REDUX_STATE__
     || ('object' !== (typeof unsafeWindow.__IPLAYER_REDUX_STATE__))
-    || !Array.isArray(unsafeWindow.__IPLAYER_REDUX_STATE__.versions)
-    || !unsafeWindow.__IPLAYER_REDUX_STATE__.versions.length
-    || ('object' !== (typeof unsafeWindow.__IPLAYER_REDUX_STATE__.versions[0]))
-    || !unsafeWindow.__IPLAYER_REDUX_STATE__.versions[0].id
   ) return
 
-  var video_id  = unsafeWindow.__IPLAYER_REDUX_STATE__.versions[0].id
-  var jsonp_url = 'https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/' + video_id + '/format/json/jsfunc/' + constants.jsonp_callback
+  var is_vod = (
+       Array.isArray(unsafeWindow.__IPLAYER_REDUX_STATE__.versions)
+    && unsafeWindow.__IPLAYER_REDUX_STATE__.versions.length
+    && ('object' === (typeof unsafeWindow.__IPLAYER_REDUX_STATE__.versions[0]))
+    && unsafeWindow.__IPLAYER_REDUX_STATE__.versions[0].id
+  )
 
-  unsafeWindow.window[constants.jsonp_callback] = function(data) {
-    var formats = process_jsonp_data(data)
+  var is_livetv_channel = (
+       !is_vod
+    && unsafeWindow.__IPLAYER_REDUX_STATE__.channel
+    && ('object' === (typeof unsafeWindow.__IPLAYER_REDUX_STATE__.channel))
+    && unsafeWindow.__IPLAYER_REDUX_STATE__.channel.id
+  )
 
-    if (formats && Array.isArray(formats) && formats.length)
-      callback(formats)
-  }
+  if (!is_vod && !is_livetv_channel) return
 
-  var script = make_element('script')
-  script.setAttribute('src', jsonp_url)
-  unsafeWindow.document.body.appendChild(script)
+  var video_id = (is_vod)
+    ? unsafeWindow.__IPLAYER_REDUX_STATE__.versions[0].id
+    : unsafeWindow.__IPLAYER_REDUX_STATE__.channel.id
+
+  var json_url = 'https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/' + video_id + '/format/json/cors/1'
+
+  download_json(
+    /* url=             */ json_url,
+    /* headers=         */ null,
+    /* data=            */ null,
+    /* withCredentials= */ false,
+    /* callback=        */ function(error, data) {
+      if (error) return
+
+      var formats = process_api_response(data)
+
+      if (formats && Array.isArray(formats) && formats.length)
+        callback(formats)
+    }
+  )
 }
 
 // ----------------------------------------------------------------------------- display results

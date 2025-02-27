@@ -1,0 +1,19 @@
+API for VOD (revisited):
+========================
+
+file     = ../2021-10-18/network-trace.01.txt
+API      = `https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/${id}/format/json/jsfunc/JS_callbacks0`
+response = JSONP
+
+file     = ../2024-08-24/network-trace.02.txt
+API      = `https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/${id}/format/json/cors/1`
+response = JSON
+
+file     = ./notes-1-live.txt
+API      = `https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/${id}/format/json/cors/1`
+response = JSON
+
+summary:
+========
+* same API is used for live tv channels as for VOD
+* I can update the userscript to migrate away from the JSONP response format

@@ -1,0 +1,67 @@
+--------------------------------------------------------------------------------
+
+https://www.bbc.co.uk/iplayer/guide/bbcnews
+
+https://www.bbc.co.uk/iplayer/live/bbcnews
+
+request:
+========
+
+curl 'https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/bbc_news24/format/json/cors/1' \
+  --compressed \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.5' \
+  -H 'Accept-Encoding: gzip, deflate, br' \
+  -H 'Referer: https://www.bbc.co.uk/' \
+  -H 'Origin: https://www.bbc.co.uk' \
+  -H 'DNT: 1' \
+  -H 'Connection: keep-alive' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site'
+
+response:
+=========
+./data/1-api-response.json
+
+notes:
+======
+* includes several video stream URLs
+  - all working
+* format of this API response is consistent with the format already seen for VOD
+  - the current parser will work
+
+--------------------------------------------------------------------------------
+
+assertion:
+==========
+* each page for a distinct live stream has a unique "id"
+  - for example:
+    * page: /iplayer/live/bbcnews
+      id:   bbc_news24
+* this unique "id" is all that's needed by the API to obtain video stream URLs
+  - ie:
+      "https://open.live.bbc.co.uk/mediaselector/6/select/version/2.0/mediaset/pc/vpid/${id}/format/json/cors/1"
+
+--------------------------------------------------------------------------------
+
+view-source:https://www.bbc.co.uk/tv/bbcnews
+
+DOM inspection:
+===============
+./data/2-dom-inspection.txt
+
+notes:
+======
+* includes info for all available live streams:
+    const all_channels = window.__IPLAYER_REDUX_STATE__.navigation.items.find(item => item.id === 'channels').subItems
+* includes info for the current live stream:
+    const current_channel = window.__IPLAYER_REDUX_STATE__.channel
+    const current_epg = window.__IPLAYER_REDUX_STATE__.broadcasts.items
+
+observations:
+=============
+* each channel has an "id" field containing a value for use with the API
+
+--------------------------------------------------------------------------------

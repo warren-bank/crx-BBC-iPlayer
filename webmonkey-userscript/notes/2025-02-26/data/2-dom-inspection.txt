@@ -1,0 +1,1877 @@
+<script id="tvip-script-app-store">
+window.__IPLAYER_REDUX_STATE__ = {
+  "navigation": {
+    "items": [{
+      "id": "channels",
+      "title": "Channels",
+      "active": true,
+      "subItems": [{
+        "title": "BBC One",
+        "href": "/bbcone",
+        "liveHref": "/iplayer/live/bbcone",
+        "active": false,
+        "icon": "bbcone",
+        "id": "bbc_one"
+      }, {
+        "title": "BBC Two",
+        "href": "/bbctwo",
+        "liveHref": "/iplayer/live/bbctwo",
+        "active": false,
+        "icon": "bbctwo",
+        "id": "bbc_two"
+      }, {
+        "title": "BBC Three",
+        "href": "/tv/bbcthree",
+        "liveHref": "/iplayer/live/bbcthree",
+        "active": false,
+        "icon": "bbcthree",
+        "id": "bbc_three"
+      }, {
+        "title": "BBC Four",
+        "href": "/bbcfour",
+        "liveHref": "/iplayer/live/bbcfour",
+        "active": false,
+        "icon": "bbcfour",
+        "id": "bbc_four"
+      }, {
+        "title": "BBC Radio 1",
+        "href": "/tv/radio1",
+        "liveHref": "/iplayer/live/radio1",
+        "active": false,
+        "icon": "radio1",
+        "id": "bbc_radio_one"
+      }, {
+        "title": "CBBC",
+        "href": "/tv/cbbc",
+        "liveHref": "/iplayer/live/cbbc",
+        "active": false,
+        "icon": "cbbc",
+        "id": "cbbc"
+      }, {
+        "title": "CBeebies",
+        "href": "/tv/cbeebies",
+        "liveHref": "/iplayer/live/cbeebies",
+        "active": false,
+        "icon": "cbeebies",
+        "id": "cbeebies"
+      }, {
+        "title": "BBC Scotland",
+        "href": "/tv/bbcscotland",
+        "liveHref": "/iplayer/live/bbcscotland",
+        "active": false,
+        "icon": "bbcscotland",
+        "id": "bbc_scotland"
+      }, {
+        "title": "BBC News",
+        "href": "/tv/bbcnews",
+        "liveHref": "/iplayer/live/bbcnews",
+        "active": true,
+        "icon": "bbcnews",
+        "id": "bbc_news24"
+      }, {
+        "title": "BBC Parliament",
+        "href": "/tv/bbcparliament",
+        "liveHref": "/iplayer/live/bbcparliament",
+        "active": false,
+        "icon": "bbcparliament",
+        "id": "bbc_parliament"
+      }, {
+        "title": "BBC Alba",
+        "href": "/tv/bbcalba",
+        "liveHref": "/iplayer/live/bbcalba",
+        "active": false,
+        "icon": "bbcalba",
+        "id": "bbc_alba"
+      }, {
+        "title": "S4C",
+        "href": "/tv/s4c",
+        "liveHref": "/iplayer/live/s4c",
+        "active": false,
+        "icon": "s4c",
+        "id": "s4cpbs"
+      }]
+    }, {
+      "id": "categories",
+      "title": "Categories",
+      "active": false,
+      "subItems": [{
+        "title": "Drama & Soaps",
+        "href": "/iplayer/categories/drama-and-soaps/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "drama-and-soaps"
+      }, {
+        "title": "Films",
+        "href": "/iplayer/categories/films/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "films"
+      }, {
+        "title": "Comedy",
+        "href": "/iplayer/categories/comedy/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "comedy"
+      }, {
+        "title": "Documentaries",
+        "href": "/iplayer/categories/documentaries/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "documentaries"
+      }, {
+        "title": "Sport",
+        "href": "/iplayer/categories/sport/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "sport"
+      }, {
+        "title": "News",
+        "href": "/iplayer/categories/news/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "news"
+      }, {
+        "title": "Entertainment",
+        "href": "/iplayer/categories/entertainment/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "entertainment"
+      }, {
+        "title": "Music",
+        "href": "/iplayer/categories/music/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "music"
+      }, {
+        "title": "Food",
+        "href": "/iplayer/categories/food/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "food"
+      }, {
+        "title": "Lifestyle",
+        "href": "/iplayer/categories/lifestyle/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "lifestyle"
+      }, {
+        "title": "History",
+        "href": "/iplayer/categories/history/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "history"
+      }, {
+        "title": "Science & Nature",
+        "href": "/iplayer/categories/science-and-nature/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "science-and-nature"
+      }, {
+        "title": "Arts",
+        "href": "/iplayer/categories/arts/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "arts"
+      }, {
+        "title": "From the Archive",
+        "href": "/iplayer/categories/archive/featured",
+        "active": false,
+        "kind": "genre",
+        "id": "archive"
+      }, {
+        "title": "Audio Described",
+        "href": "/iplayer/categories/audio-described/featured",
+        "active": false,
+        "kind": "accessibility",
+        "id": "audio-described"
+      }, {
+        "title": "Signed",
+        "href": "/iplayer/categories/signed/featured",
+        "active": false,
+        "kind": "accessibility",
+        "id": "signed"
+      }, {
+        "title": "Northern Ireland",
+        "href": "/iplayer/categories/northern-ireland/featured",
+        "active": false,
+        "kind": "national",
+        "id": "northern-ireland"
+      }, {
+        "title": "Scotland",
+        "href": "/iplayer/categories/scotland/featured",
+        "active": false,
+        "kind": "national",
+        "id": "scotland"
+      }, {
+        "title": "Wales",
+        "href": "/iplayer/categories/wales/featured",
+        "active": false,
+        "kind": "national",
+        "id": "wales"
+      }, {
+        "title": "CBeebies",
+        "href": "/iplayer/categories/cbeebies/featured",
+        "active": false,
+        "kind": "childrens",
+        "id": "cbeebies"
+      }, {
+        "title": "CBBC",
+        "href": "/iplayer/categories/cbbc/featured",
+        "active": false,
+        "kind": "childrens",
+        "id": "cbbc"
+      }]
+    }, {
+      "title": "A-Z",
+      "ariaLabel": "A to Z",
+      "href": "/iplayer/a-z/a",
+      "active": false,
+      "id": "a-z"
+    }, {
+      "title": "TV Guide",
+      "href": "/iplayer/guide",
+      "active": false,
+      "id": "tv-guide"
+    }, {
+      "title": "Watchlist",
+      "href": "/iplayer/watchlist",
+      "active": false,
+      "id": "watchlist"
+    }],
+    "renderOpen": true,
+    "variant": "default",
+    "useLiveHrefs": false,
+    "accessibilityHelpHref": "/iplayer/features/accessibility"
+  },
+  "footer": {
+    "locationLabel": "Change location",
+    "languageLabel": "Change language",
+    "locations": [{
+      "label": "Nations",
+      "locations": [{
+        "label": "Northern Ireland",
+        "value": "ni"
+      }, {
+        "label": "Scotland",
+        "value": "sc"
+      }, {
+        "label": "Wales",
+        "value": "wa"
+      }]
+    }, {
+      "label": "Regions",
+      "locations": [{
+        "label": "Channel Islands",
+        "value": "ci"
+      }, {
+        "label": "East",
+        "value": "ea"
+      }, {
+        "label": "East Midlands",
+        "value": "em"
+      }, {
+        "label": "East Yorks & Lincs",
+        "value": "ey"
+      }, {
+        "label": "London",
+        "value": "lo"
+      }, {
+        "label": "North East & Cumbria",
+        "value": "ne"
+      }, {
+        "label": "North West",
+        "value": "nw"
+      }, {
+        "label": "South",
+        "value": "so"
+      }, {
+        "label": "South East",
+        "value": "se"
+      }, {
+        "label": "South West",
+        "value": "sw"
+      }, {
+        "label": "West",
+        "value": "we"
+      }, {
+        "label": "West Midlands",
+        "value": "wm"
+      }, {
+        "label": "Yorkshire",
+        "value": "yo"
+      }]
+    }],
+    "languages": [{
+      "label": "English",
+      "value": "en"
+    }, {
+      "label": "Cymraeg",
+      "value": "cy"
+    }, {
+      "label": "Gaeilge",
+      "value": "ga"
+    }, {
+      "label": "Gàidhlig",
+      "value": "gd"
+    }],
+    "parentalControlsLabel": "Parental Controls",
+    "helpFaqLabel": "Help & FAQ",
+    "parentalControlsHref": "/iplayer/guidance",
+    "helpFaqHref": "https://www.bbc.co.uk/iplayer/help",
+    "defaultLocation": "lo",
+    "defaultLanguage": "en",
+    "regionalPage": true
+  },
+  "safeguarding": {
+    "clientAgeBracket": "unknown",
+    "serverAgeBracket": "unknown",
+    "dismissedModal": false
+  },
+  "language": "en",
+  "experiments": {},
+  "translations": {
+    "onNow": "On Now",
+    "onNext": "On Next",
+    "nowWatching": "Now Watching",
+    "watchLive": "Watch live",
+    "watchNow": "Watch now",
+    "watchFromStart": "Watch from start",
+    "topPick": "Top Pick",
+    "schedule": "BBC News Schedule",
+    "highlightsPageTitle": "BBC News",
+    "livePageTitle": "Watch BBC News live",
+    "signInTitle": "Sign in to your BBC account",
+    "signInText": "It's quick and easy",
+    "signInDismissLabel": "Maybe later",
+    "signInDismissAria": "Maybe later",
+    "findOutMore": "Find out more",
+    "tvlModalTitle": "Got a TV Licence?",
+    "tvlModalSubtitle": "You need one to watch any BBC programme on iPlayer - live, catch-up or on-demand. It's the law.",
+    "tvlYes": "I have a TV Licence. Watch now.",
+    "tvlNo": "I don't have a TV Licence.",
+    "channelFeaturedTitle": "Featured on %s",
+    "channelGroupViewAll": "View all",
+    "channelGroupViewAllAriaLabel": "View all programmes from the %s group",
+    "channelAtoZViewAll": "View all %s A-Z",
+    "noJsBanner": "JavaScript seems to be disabled. Please enable JavaScript to take full advantage of iPlayer."
+  },
+  "channel": {
+    "id": "bbc_news24",
+    "slug": "bbcnews",
+    "title": "BBC News",
+    "titleUnregionalised": "BBC News",
+    "isChildrensPage": false,
+    "isSimulcast": false,
+    "links": {
+      "schedule": "/iplayer/schedules/bbcnews",
+      "highlights": "/tv/bbcnews",
+      "simulcast": "/iplayer/live/bbcnews",
+      "simulcastWatchFromStart": "/iplayer/live/bbcnews?rewindTo=current",
+      "ptrts": {
+        "watchLive": "https://www.bbc.co.uk/iplayer/live/bbcnews",
+        "watchFromStart": "https://www.bbc.co.uk/iplayer/live/bbcnews?rewindTo=current"
+      }
+    },
+    "masterBrand": "bbc_news24",
+    "hasSchedule": true,
+    "onAir": true
+  },
+  "broadcasts": {
+    "status": "succeeded",
+    "items": [{
+      "image": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0gq408g.jpg",
+      "endTime": "00:00",
+      "startTime": "23:00",
+      "scheduledStart": 1740610800,
+      "title": "BBC World News America",
+      "subtitle": "26/02/2025",
+      "href": "/programmes/n13xtmgh",
+      "events": [{
+        "name": "started",
+        "system": "uas",
+        "time": "2025-02-26T23:10:00.000Z"
+      }, {
+        "name": "ended",
+        "system": "uas",
+        "time": "2025-02-26T23:45:00.000Z"
+      }, {
+        "name": "iplxp-ep-started",
+        "system": "optimizely",
+        "time": "2025-02-26T23:00:30.000Z"
+      }, {
+        "name": "iplxp-ep-watched",
+        "system": "optimizely",
+        "time": "2025-02-26T23:45:00.000Z"
+      }, {
+        "name": "iplxp-ep-started",
+        "system": "dax",
+        "time": "2025-02-26T23:00:30.000Z"
+      }, {
+        "name": "iplxp-ep-watched",
+        "system": "dax",
+        "time": "2025-02-26T23:45:00.000Z"
+      }],
+      "episodeId": "m0028gz0",
+      "versionId": "m0028gyz"
+    }, {
+      "image": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0fj0528.jpg",
+      "endTime": "00:30",
+      "startTime": "00:00",
+      "scheduledStart": 1740614400,
+      "title": "BBC News",
+      "subtitle": "27/02/2025",
+      "href": "/programmes/m000m3ds",
+      "events": [{
+        "name": "started",
+        "system": "uas",
+        "time": "2025-02-27T00:07:30.000Z"
+      }, {
+        "name": "ended",
+        "system": "uas",
+        "time": "2025-02-27T00:22:30.000Z"
+      }, {
+        "name": "iplxp-ep-started",
+        "system": "optimizely",
+        "time": "2025-02-27T00:00:30.000Z"
+      }, {
+        "name": "iplxp-ep-watched",
+        "system": "optimizely",
+        "time": "2025-02-27T00:22:30.000Z"
+      }, {
+        "name": "iplxp-ep-started",
+        "system": "dax",
+        "time": "2025-02-27T00:00:30.000Z"
+      }, {
+        "name": "iplxp-ep-watched",
+        "system": "dax",
+        "time": "2025-02-27T00:22:30.000Z"
+      }],
+      "episodeId": "m0028h7t",
+      "versionId": "m0028h7s"
+    }]
+  },
+  "groups": [{
+    "id": "m001h5dx",
+    "title": "In Case You Missed It",
+    "group_type": "curated",
+    "entities": [{
+      "id": "m002393m",
+      "title": "Strictly: The Story Behind the Headlines",
+      "type": "episode",
+      "programme_type": "one-off",
+      "editorial_title": "Strictly: The Story Behind the Headlines",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jpxr3r.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jpxr3h.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "synopses": {
+        "small": "In 2024, the BBC’s biggest show came under the spotlight for the wrong reasons."
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "21 mins"
+        }
+      }]
+    }, {
+      "id": "m0024pck",
+      "title": "BBC News",
+      "type": "episode",
+      "programme_type": "self-contained",
+      "editorial_title": "Liam Payne: What Happened?",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jyq2lf.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jyq2fl.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Liam Payne: What Happened?",
+      "synopses": {
+        "editorial": "The story of former One Direction star Liam Payne's tragic death in Argentina.",
+        "small": "The story of former One Direction star Liam Payne's tragic death in Argentina."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "18 mins"
+        }
+      }]
+    }, {
+      "id": "m0024g1k",
+      "title": "MrBeast: The King of YouTube?",
+      "type": "episode",
+      "programme_type": "one-off",
+      "editorial_title": "MrBeast: The King of YouTube?",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jx324m.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jx321s.jpg"
+      },
+      "labels": {
+        "category": "News"
+      },
+      "live": false,
+      "synopses": {
+        "editorial": "As the world's biggest YouTuber faces controversy, will his empire crumble?",
+        "small": "As the world's biggest YouTuber faces controversy, will his empire crumble?"
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "18 mins"
+        }
+      }]
+    }, {
+      "id": "m0023gzb",
+      "title": "Huw Edwards: Fall from Grace",
+      "type": "episode",
+      "programme_type": "one-off",
+      "editorial_title": "Huw Edwards: Fall from Grace",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jqt9bb.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jqt99h.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "synopses": {
+        "editorial": "The story of the former BBC presenter who became a convicted sex offender.",
+        "small": "The story of the former BBC presenter who became a convicted sex offender."
+      },
+      "versions": [{
+        "kind": "technical-replacement",
+        "duration": {
+          "text": "18 mins"
+        }
+      }]
+    }, {
+      "id": "m001ytqx",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "The List",
+      "editorial_title": "13 Times Taylor Swift Made History",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0hrcr5m.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0hrcr2g.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "13 Times Taylor Swift Made History",
+      "synopses": {
+        "editorial": "From dizzying records to becoming a billionaire - we're bringing up Taylor's history.",
+        "small": "From dizzying records to becoming a billionaire: we're bringing up Taylor Swift's history."
+      },
+      "versions": [{
+        "kind": "technical-replacement",
+        "duration": {
+          "text": "21 mins"
+        }
+      }]
+    }, {
+      "id": "m0021kfq",
+      "title": "BBC News",
+      "type": "episode",
+      "programme_type": "self-contained",
+      "editorial_title": "Trump Assassination Attempt: What Happened?",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jbcb2t.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jbcb1q.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Trump Assassination Attempt: What Happened?",
+      "synopses": {
+        "editorial": "First hand accounts from BBC journalists and eyewitnesses at the scene.",
+        "small": "First-hand accounts from BBC journalists and eyewitnesses at the scene in Pennsylvania."
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "29 mins"
+        }
+      }, {
+        "kind": "original",
+        "duration": {
+          "text": "19 mins"
+        }
+      }]
+    }, {
+      "id": "m002377x",
+      "title": "The Killer Hornets",
+      "type": "episode",
+      "programme_type": "one-off",
+      "editorial_title": "The Killer Hornets",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jnt2mg.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jnt2jt.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "synopses": {
+        "editorial": "British bees are under threat from an invasive species, the Asian Hornet",
+        "small": "British bees are under threat from an invasive species, the Asian Hornet."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "16 mins"
+        }
+      }]
+    }, {
+      "id": "m00231pf",
+      "title": "What Happens When",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "What Happens When You Win a Reality Show?",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jq2pt2.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jq2plc.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "What Happens When You Win a Reality Show?",
+      "synopses": {
+        "editorial": "Four iconic reality stars spill what life is like after the cameras stop rolling.",
+        "small": "Four iconic reality stars spill what life is like after the cameras stop rolling."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "25 mins"
+        }
+      }]
+    }]
+  }, {
+    "id": "m00255tm",
+    "title": "Scams & Scandals",
+    "group_type": "curated",
+    "entities": [{
+      "id": "m0027g4f",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Killed By The Internet",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kph2s3.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kkqpjk.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Killed By The Internet",
+      "synopses": {
+        "editorial": "Suicide at seventeen. The tragic consequences of an online forum obsessed with dying.",
+        "small": "Suicide at seventeen. The tragic consequences of an online forum obsessed with dying."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "27 mins"
+        }
+      }]
+    }, {
+      "id": "m0028253",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Botched: The Brazilian Butt Lift Nightmare",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0knfbw7.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0knfb3c.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Botched: The Brazilian Butt Lift Nightmare",
+      "synopses": {
+        "editorial": "Disfigured and in agony. We investigate the man charging thousands for dodgy butt lifts.",
+        "small": "Disfigured and in agony. We investigate the man charging thousands for dodgy butt lifts."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "25 mins"
+        }
+      }]
+    }, {
+      "id": "m001yjr8",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Captain Tom: What Went Wrong?",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j925xx.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j925q2.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Captain Tom: What Went Wrong?",
+      "synopses": {
+        "editorial": "The story behind the remarkable downfall of Captain Tom’s fundraising family.",
+        "small": "The story behind the remarkable downfall of Captain Tom’s fundraising family."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "28 mins"
+        }
+      }, {
+        "kind": "audio-described",
+        "duration": {
+          "text": "28 mins"
+        }
+      }, {
+        "kind": "signed",
+        "duration": {
+          "text": "28 mins"
+        }
+      }]
+    }, {
+      "id": "m00235rv",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Are We Dating the Same Fraudster?",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jnrmvj.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jnrmnx.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "Are We Dating the Same Fraudster?",
+      "synopses": {
+        "editorial": "Imagine finding out your boyfriend was a serial love rat, with a string of convictions.",
+        "small": "Imagine finding out your boyfriend was a serial love rat, with a string of  convictions."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "26 mins"
+        }
+      }]
+    }, {
+      "id": "m00241y0",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "The Nightmare Next Door",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kg7pxh.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kg7p7n.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "The Nightmare Next Door",
+      "synopses": {
+        "editorial": "Meet the people living in the shadow of the incinerators burning rubbish.",
+        "small": "Meet the people living in the shadow of the incinerators burning rubbish."
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "18 mins"
+        }
+      }]
+    }, {
+      "id": "m0021ftx",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "The Child Rescue Con",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jbkh8z.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jbkgzw.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "The Child Rescue Con",
+      "synopses": {
+        "editorial": "A former police officer claims to rescue children from trafficking.",
+        "small": "A former police officer claims to rescue children from trafficking."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "26 mins"
+        }
+      }]
+    }, {
+      "id": "m00200yg",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Britain's Biggest Benefit Scam",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j17hkv.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j17hgh.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Britain's Biggest Benefit Scam",
+      "synopses": {
+        "small": "The story of how a gang stole more than £50 million from UK taxpayers."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "26 mins"
+        }
+      }, {
+        "kind": "audio-described",
+        "duration": {
+          "text": "26 mins"
+        }
+      }, {
+        "kind": "signed",
+        "duration": {
+          "text": "26 mins"
+        }
+      }]
+    }, {
+      "id": "m001zphq",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "Scams & Scandals",
+      "editorial_title": "Britain's Hero Plumber Exposed",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0hy3tyh.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0hy3tsb.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Britain's Hero Plumber Exposed",
+      "synopses": {
+        "editorial": "Viral acts of kindness raised millions, but investigations uncover misleading claims",
+        "small": "Viral acts of kindness raised millions - but investigations uncover misleading claims."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "31 mins"
+        }
+      }]
+    }]
+  }, {
+    "id": "m00275nr",
+    "title": "The Big Cases",
+    "group_type": "curated",
+    "entities": [{
+      "id": "m0026ypv",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Neighbour, Friend, Killer",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kczf54.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kczf14.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "Neighbour, Friend, Killer",
+      "synopses": {
+        "editorial": "Wendy Buckney knew about her neighbour's past but wanted to give him a second chance.",
+        "small": "Wendy Buckney knew about her neighbour's past but wanted to give him a second chance."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "21 mins"
+        }
+      }]
+    }, {
+      "id": "m0026sws",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Sara Sharif: Tortured Behind Closed Doors",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kbvmth.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kbvmkm.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "Tortured Behind Closed Doors",
+      "synopses": {
+        "editorial": "The tragic story of Sara Sharif who was brutally killed by her father and stepmother.",
+        "small": "The tragic story of Sara Sharif who was brutally killed by her father and stepmother."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "35 mins"
+        }
+      }]
+    }, {
+      "id": "m0026pkq",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "My Husband the Monster",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kbb5qs.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kbb5pf.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "My Husband the Monster",
+      "synopses": {
+        "small": "The shocking story of Gisele Pelicot, raped by strangers her husband invited to abuse her."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "29 mins"
+        }
+      }]
+    }, {
+      "id": "m0026cb6",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "The Mistaken Identity Murders",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k8kmp2.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k8kmcs.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "The Mistaken Identity Murders ",
+      "synopses": {
+        "editorial": "The shocking story of two innocent teenagers murdered in a case of mistaken identity.",
+        "small": "The shocking story of two innocent teenagers murdered in a case of mistaken identity."
+      },
+      "versions": [{
+        "kind": "technical-replacement",
+        "duration": {
+          "text": "30 mins"
+        }
+      }]
+    }, {
+      "id": "m0023qq3",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Killed By Kids: The Machete Murder",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0js79w1.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0js79tr.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "Killed By Kids: The Machete Murder",
+      "synopses": {
+        "editorial": "When kids kill. The shocking story of two 12 year olds, a machete and a brutal murder.",
+        "small": "When kids kill. The shocking story of two 12 year olds, a machete and a brutal murder. "
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "26 mins"
+        }
+      }]
+    }, {
+      "id": "m0021k3f",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "Trying to Kill Holly",
+      "editorial_title": "Trying to Kill Holly",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jb07vt.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jb07t0.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "Trying to Kill Holly",
+      "synopses": {
+        "editorial": "The case of a plot to kidnap, rape, and murder TV presenter Holly Willoughby.",
+        "small": "The case of a plot to kidnap, rape, and murder TV presenter Holly Willoughby."
+      },
+      "versions": [{
+        "kind": "technical-replacement",
+        "duration": {
+          "text": "16 mins"
+        }
+      }]
+    }, {
+      "id": "m0020srp",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "The Abuser Headteacher",
+      "editorial_title": "The Abuser Headteacher",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j7n1h1.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j55jgn.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "The Abuser Headteacher",
+      "synopses": {
+        "small": "The story of a respected head who abused his power and became a convicted sex offender."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "29 mins"
+        }
+      }]
+    }, {
+      "id": "m0020jx8",
+      "title": "The Big Cases",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Crushed: The Six Year Nightmare",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j3hxjn.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j3hxgs.jpg"
+      },
+      "labels": {
+        "category": "True Crime"
+      },
+      "live": false,
+      "subtitle": "Crushed: The Six Year Nightmare",
+      "synopses": {
+        "editorial": "Six years after surviving a horror smash, Monika died. It was time for justice, again.",
+        "small": "Six years after surviving a horror smash, Monika died. It was time for justice, again."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "21 mins"
+        }
+      }]
+    }]
+  }, {
+    "id": "m001vxvt",
+    "title": "The List",
+    "group_type": "curated",
+    "entities": [{
+      "id": "m0027bg6",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "7 Ways a TV Show Predicted 2025",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0khphcf.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0khpgt8.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "7 Ways a TV Show Predicted 2025",
+      "synopses": {
+        "editorial": "In 1995 Tomorrow's World looked forward to life in 2025, did they get it right?",
+        "small": "In 1995 Tomorrow's World looked at what life would be like in 2025. Did they get it right?"
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "17 mins"
+        }
+      }]
+    }, {
+      "id": "m0026pj2",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "11 Viral Moments of 2024",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kb98zl.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kb98vz.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "11 Viral Moments of 2024",
+      "synopses": {
+        "editorial": "From breakdancers to pygmy hippos: eleven stories that broke the internet in 2024.",
+        "small": "From breakdancers to pygmy hippos: eleven stories that broke the internet in 2024."
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "23 mins"
+        }
+      }]
+    }, {
+      "id": "m0022lh8",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "7 Shocking UK Weather Moments",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jjvymv.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jjvygw.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "7 Shocking UK Weather Moments",
+      "synopses": {
+        "small": "From tornados to wildfires, a look back at extreme weather that impacted the country."
+      },
+      "versions": [{
+        "kind": "technical-replacement",
+        "duration": {
+          "text": "16 mins"
+        }
+      }]
+    }, {
+      "id": "m0022cvd",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "Key moments from the Olympics",
+      "editorial_title": "Paris Olympics: Tears and Triumphs",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jhhc90.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jhhc4w.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Paris Olympics: Tears and Triumphs",
+      "synopses": {
+        "editorial": "A look back at key moments from the 2024 Olympic Games.",
+        "small": "A look back at key moments from the 2024 Olympic Games."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "14 mins"
+        }
+      }]
+    }, {
+      "id": "m0022d72",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "9 Times Elon Musk Went Viral",
+      "editorial_title": "9 Times Elon Musk Went Viral",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jj44ff.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jj44mr.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "9 Times Elon Musk Went Viral",
+      "synopses": {
+        "small": "From tweets to takeovers, here are nine times the billionaire broke the internet."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "17 mins"
+        }
+      }]
+    }, {
+      "id": "m0021rk4",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "The List",
+      "editorial_title": "9 Historic Olympic Moments",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jcy8g0.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jcy87t.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "9 Historic Olympic Moments",
+      "synopses": {
+        "editorial": "From euphoric wins to heartbreaking injuries, nine extraordinary sporting moments.",
+        "small": "From euphoric wins to heartbreaking injuries, nine extraordinary sporting moments."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "13 mins"
+        }
+      }]
+    }, {
+      "id": "m00215dn",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "10 Wild Election Moments",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j7tkcj.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j7tnns.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "10 Wild Election Moments",
+      "synopses": {
+        "editorial": "From Ed Davey making a splash to Theresa May's fields of wheat; 10 wild election moments.",
+        "small": "From Ed Davey making a splash to Theresa May's fields of wheat; 10 wild election moments."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "19 mins"
+        }
+      }]
+    }, {
+      "id": "m0020s34",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_subtitle": "The List",
+      "editorial_title": "8 Things to Know Before Election Day",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j4rkg6.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0j4rkdg.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "8 Things to Know Before Election Day",
+      "synopses": {
+        "editorial": "From how to register to where to vote, here's what you should know before election day.",
+        "small": "From how to register to where to vote, here's what you should know before election day."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "10 mins"
+        }
+      }]
+    }]
+  }, {
+    "id": "m00255g9",
+    "title": "From Above",
+    "group_type": "curated",
+    "entities": [{
+      "id": "m0027wh7",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "The Biggest Festival on Earth",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kmk4qt.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kmk4nw.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "The Biggest Festival on Earth",
+      "synopses": {
+        "small": "When millions gather for a Hindu festival in Northern India, tragedy strikes."
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "10 mins"
+        }
+      }]
+    }, {
+      "id": "m00265qb",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Storm Bert Batters the UK",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k72ml5.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k72mfl.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Storm Bert Batters the UK",
+      "synopses": {
+        "editorial": "Homes destroyed and lives changed forever - the impact of Storm Bert.",
+        "small": "Homes destroyed and lives changed forever - the impact of Storm Bert."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "8 mins"
+        }
+      }]
+    }, {
+      "id": "m00246nx",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Melting Glaciers",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k4j8p6.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0jyf9r8.jpg"
+      },
+      "labels": {
+        "category": "Science & Nature"
+      },
+      "live": false,
+      "subtitle": "Melting Glaciers",
+      "synopses": {
+        "editorial": "Watch as glaciers melt at an alarming rate. All seen from above.",
+        "small": "See how glaciers melt at an alarming rate. All seen from above."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "11 mins"
+        }
+      }]
+    }, {
+      "id": "m00251q6",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Harry Potter Bridge Repairs",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k1ddhh.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k1ddqq.jpg"
+      },
+      "labels": {
+        "category": "News"
+      },
+      "live": false,
+      "subtitle": "Harry Potter Bridge Repairs",
+      "synopses": {
+        "editorial": "The Glenfinnan Viaduct in Scotland made famous in the Harry Potter films, from above.",
+        "small": "The Glenfinnan Viaduct in Scotland made famous in the Harry Potter films, from above."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "8 mins"
+        }
+      }]
+    }, {
+      "id": "m0023hln",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Storm Boris Floods In Europe",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k4472n.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k4473c.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Storm Boris Floods in Europe",
+      "synopses": {
+        "editorial": "Floods have been sweeping through Europe. See Storm Boris from above.",
+        "small": "Floods have been sweeping through central Europe. See Storm Boris from above."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "9 mins"
+        }
+      }]
+    }, {
+      "id": "m0022wtc",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Tomato Fight Festival",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k447kr.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k447g2.jpg"
+      },
+      "labels": {
+        "category": "News"
+      },
+      "live": false,
+      "subtitle": "Tomato Fight Festival",
+      "synopses": {
+        "editorial": "An epic food fight, taking place on the streets of Spain. As seen from above.",
+        "small": "An epic food fight, taking place on the streets of Spain. As seen from above."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "10 mins"
+        }
+      }]
+    }, {
+      "id": "m0022hxr",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "The Northern Lights",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k445r5.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k445n4.jpg"
+      },
+      "labels": {
+        "category": "News"
+      },
+      "live": false,
+      "subtitle": "The Northern Lights",
+      "synopses": {
+        "editorial": "Seen from the International Space Station - a spectacular display of aurora borealis.",
+        "small": "Seen from the International Space Station - a spectacular display of aurora borealis."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "9 mins"
+        }
+      }]
+    }, {
+      "id": "m002342t",
+      "title": "From Above",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Shetland's Mega Wind Farm",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k448dy.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0k4488c.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Shetland's Mega Wind Farm",
+      "synopses": {
+        "editorial": "The UK's most powerful onshore wind farm, in the windiest part of the country. From above",
+        "small": "The UK's most powerful onshore wind farm, in the windiest part of the country. From above."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "10 mins"
+        }
+      }]
+    }]
+  }],
+  "player": {
+    "open": false,
+    "persist": false,
+    "playhead": null,
+    "playFrom": null,
+    "volume": 0.6,
+    "subtitles": false,
+    "playingState": null,
+    "playerContentType": null,
+    "metadataLoadedEventFired": false
+  },
+  "id": {
+    "signedIn": false,
+    "status": "green",
+    "requiresSignIn": true,
+    "msiModalVisible": false,
+    "msiModalType": null,
+    "enablePersonalisation": false,
+    "ctas": {
+      "watchLive": "%3Cp%20class%3D%22id-cta-wrapper%20id-cta--mixed%22%20id%3D%22id4-cta-94f707b9-b41e-4934-adce-4f020a1cd893%22%3E%3Ca%20href%3D%22https%3A%2F%2Fsession.bbc.co.uk%2Fsession%3Fptrt%3Dhttps%253A%252F%252Fwww.bbc.co.uk%252Fiplayer%252Flive%252Fbbcnews%26context%3Diplayer%26userOrigin%3Diplayer%22%20class%3D%22id-cta-button%22%20data-bbc-container%3D%22id-cta%22%20data-bbc-event-type%3D%22click%22%20data-bbc-ignore-views%3D%221%22%20data-bbc-metadata%3D'%7B%22id-cta-type%22%3A%20%22embedded%22%7D'%20data-bbc-source%3D%22responsive_web%22%20data-bbc-title%3D%22id-cta-sign-in%22%3E%3Csvg%20class%3D%22id-cta-icon%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%221em%22%20height%3D%221em%22%3E%3Cpath%20d%3D%22M16%2017.5a7.878%207.878%200%2001-8-7.75A7.878%207.878%200%200116%202a7.878%207.878%200%20018%207.75%207.878%207.878%200%2001-8%207.75zM2%2030c0-5.883%207.519-10%2014.014-10C22.48%2020%2030%2024.12%2030%2029.994c0%20.005-28%20.007-28%20.005z%22%20%2F%3E%3C%2Fsvg%3ESign%20in%3C%2Fa%3E%20or%20%3Ca%20href%3D%22https%3A%2F%2Fsession.bbc.co.uk%2Fsession%3Faction%3Dregister%26ptrt%3Dhttps%253A%252F%252Fwww.bbc.co.uk%252Fiplayer%252Flive%252Fbbcnews%26context%3Diplayer%26userOrigin%3Diplayer%22%20class%3D%22id-cta-link%22%20data-bbc-container%3D%22id-cta%22%20data-bbc-event-type%3D%22click%22%20data-bbc-ignore-views%3D%221%22%20data-bbc-metadata%3D'%7B%22id-cta-type%22%3A%20%22embedded%22%7D'%20data-bbc-source%3D%22responsive_web%22%20data-bbc-title%3D%22id-cta-registration%22%3ERegister%3C%2Fa%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Eif%20(require.s.contexts._.config.paths%5B'idcta'%5D)%20%7Brequire(%5B'idcta%2Fidcta-1'%5D%2C%20function(idcta)%20%7Bif%20(idcta%20%26%26%20typeof%20idcta.addUserOrigin%20%3D%3D%3D%20'function')%20%7Bidcta.addUserOrigin('id4-cta-94f707b9-b41e-4934-adce-4f020a1cd893')%3B%7D%7D)%3B%7D%3C%2Fscript%3E%3C%2Fp%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Erequire(%5B'idcta%2Fidcta-1'%5D%2C%20function(idcta)%20%7Bnew%20idcta.Cta(%7Bid%3A%20'id4-cta-94f707b9-b41e-4934-adce-4f020a1cd893'%2C%20states%3A%20%7B%7D%2C%20policyname%3A%20''%7D)%3B%7D)%3B%3C%2Fscript%3E",
+      "watchFromStart": "%3Cp%20class%3D%22id-cta-wrapper%20id-cta--mixed%22%20id%3D%22id4-cta-b83f037a-8d7e-4cda-b55c-e1b2c64e1f95%22%3E%3Ca%20href%3D%22https%3A%2F%2Fsession.bbc.co.uk%2Fsession%3Fptrt%3Dhttps%253A%252F%252Fwww.bbc.co.uk%252Fiplayer%252Flive%252Fbbcnews%253FrewindTo%253Dcurrent%26context%3Diplayer%26userOrigin%3Diplayer%22%20class%3D%22id-cta-button%22%20data-bbc-container%3D%22id-cta%22%20data-bbc-event-type%3D%22click%22%20data-bbc-ignore-views%3D%221%22%20data-bbc-metadata%3D'%7B%22id-cta-type%22%3A%20%22embedded%22%7D'%20data-bbc-source%3D%22responsive_web%22%20data-bbc-title%3D%22id-cta-sign-in%22%3E%3Csvg%20class%3D%22id-cta-icon%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%221em%22%20height%3D%221em%22%3E%3Cpath%20d%3D%22M16%2017.5a7.878%207.878%200%2001-8-7.75A7.878%207.878%200%200116%202a7.878%207.878%200%20018%207.75%207.878%207.878%200%2001-8%207.75zM2%2030c0-5.883%207.519-10%2014.014-10C22.48%2020%2030%2024.12%2030%2029.994c0%20.005-28%20.007-28%20.005z%22%20%2F%3E%3C%2Fsvg%3ESign%20in%3C%2Fa%3E%20or%20%3Ca%20href%3D%22https%3A%2F%2Fsession.bbc.co.uk%2Fsession%3Faction%3Dregister%26ptrt%3Dhttps%253A%252F%252Fwww.bbc.co.uk%252Fiplayer%252Flive%252Fbbcnews%253FrewindTo%253Dcurrent%26context%3Diplayer%26userOrigin%3Diplayer%22%20class%3D%22id-cta-link%22%20data-bbc-container%3D%22id-cta%22%20data-bbc-event-type%3D%22click%22%20data-bbc-ignore-views%3D%221%22%20data-bbc-metadata%3D'%7B%22id-cta-type%22%3A%20%22embedded%22%7D'%20data-bbc-source%3D%22responsive_web%22%20data-bbc-title%3D%22id-cta-registration%22%3ERegister%3C%2Fa%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Eif%20(require.s.contexts._.config.paths%5B'idcta'%5D)%20%7Brequire(%5B'idcta%2Fidcta-1'%5D%2C%20function(idcta)%20%7Bif%20(idcta%20%26%26%20typeof%20idcta.addUserOrigin%20%3D%3D%3D%20'function')%20%7Bidcta.addUserOrigin('id4-cta-b83f037a-8d7e-4cda-b55c-e1b2c64e1f95')%3B%7D%7D)%3B%7D%3C%2Fscript%3E%3C%2Fp%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Erequire(%5B'idcta%2Fidcta-1'%5D%2C%20function(idcta)%20%7Bnew%20idcta.Cta(%7Bid%3A%20'id4-cta-b83f037a-8d7e-4cda-b55c-e1b2c64e1f95'%2C%20states%3A%20%7B%7D%2C%20policyname%3A%20''%7D)%3B%7D)%3B%3C%2Fscript%3E"
+    },
+    "requestFromUK": "1"
+  },
+  "tvl": {
+    "tvlModalVisible": false,
+    "tvlModalType": null,
+    "hasLicence": false
+  },
+  "page": {},
+  "dials": {
+    "enableToucanOnIOSAndIPadOS": "true"
+  },
+  "config": {
+    "staticHost": "https://iplayer-web.files.bbci.co.uk",
+    "iblBaseUrl": "https://ibl.api.bbc.co.uk/ibl/v1",
+    "iblUserBaseUrl": "https://user.ibl.api.bbc.co.uk/ibl/v1"
+  },
+  "stats": {
+    "subscribedBroadcasts": [],
+    "playedTypeStatFired": false,
+    "smpStatsEnv": "live"
+  },
+  "rewindStats": {
+    "baseTimestamp": null,
+    "sendStatsDue": null,
+    "lastWatchedEpisodeId": null,
+    "sentEpisodes": []
+  },
+  "highlights": {
+    "items": [{
+      "id": "l0056z3r",
+      "title": "Israeli Hostages and Palestinian Prisoners Released",
+      "type": "episode",
+      "programme_type": "one-off",
+      "images": {
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktt177.jpg"
+      },
+      "labels": {
+        "time": "Live"
+      },
+      "live": true,
+      "synopses": {
+        "small": "The remains of four Israeli's will be swapped for hundreds of Palestinian prisoners"
+      },
+      "versions": [{
+        "kind": "webcast",
+        "duration": {
+          "text": "1437 mins"
+        }
+      }]
+    }, {
+      "id": "l0056z33",
+      "title": "Volodymyr Zelensky To Visit White House On Friday",
+      "type": "episode",
+      "programme_type": "one-off",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktsy74.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktsy9q.jpg"
+      },
+      "labels": {
+        "time": "Live"
+      },
+      "live": true,
+      "synopses": {
+        "small": "Donald Trump says he and Zelensky will sign a \"very big agreement\" during the visit"
+      },
+      "versions": [{
+        "kind": "webcast",
+        "duration": {
+          "text": "1438 mins"
+        }
+      }]
+    }, {
+      "id": "l0056z37",
+      "title": "Organisations To Be Investigated Over Grenfell Fire",
+      "type": "episode",
+      "programme_type": "one-off",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktt0rb.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktt0s7.jpg"
+      },
+      "live": false,
+      "synopses": {
+        "small": "The government accepts all 58 recommendations from the Grenfell Tower inquiry"
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "3 mins"
+        }
+      }]
+    }, {
+      "id": "l0056z3h",
+      "title": "Going For Gold Presenter Henry Kelly Dies At 78",
+      "type": "episode",
+      "programme_type": "one-off",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktty42.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktthx2.jpg"
+      },
+      "live": false,
+      "synopses": {
+        "small": "Kelly hosted TV gameshow 'Game For A Laugh' and 'Going For Gold' in the 1980s and 90s"
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "2 mins"
+        }
+      }]
+    }, {
+      "id": "m0028vw7",
+      "title": "Behind the Stories",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Tim Westwood: Behind the Investigation",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktngcc.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ktnw0h.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Tim Westwood: Behind the Investigation",
+      "synopses": {
+        "small": "BBC journalists Chi-Chi Izundu and Ruth Evans investigated the conduct of DJ Tim Westwood."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "20 mins"
+        }
+      }]
+    }, {
+      "id": "m001xhns",
+      "title": "The List",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "From Snubs to Slaps: Iconic Oscar Moments",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0hgzzt4.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0hh0004.jpg"
+      },
+      "labels": {
+        "category": "Entertainment"
+      },
+      "live": false,
+      "subtitle": "13 Golden Oscar Moments",
+      "synopses": {
+        "editorial": "Records, fails & more: A lookback at iconic moments from Oscar history.",
+        "small": "From slaps to snubs: A lookback at iconic moments from Oscar history."
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "14 mins"
+        }
+      }]
+    }, {
+      "id": "m0028vtf",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Dumped: The Great Waste Scandal",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kthf5r.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kthf3r.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Dumped: The Great Waste Scandal",
+      "synopses": {
+        "small": "Piles of illegal waste caught on camera and the \"networks of people\" behind the dumps."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "23 mins"
+        }
+      }]
+    }, {
+      "id": "m0028p9y",
+      "title": "Weather: Beyond the Forecast",
+      "type": "episode",
+      "programme_type": "unclassified",
+      "editorial_title": "Flying in a Storm",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ksv9v8.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ksv9rt.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Flying in a Storm",
+      "synopses": {
+        "editorial": "Turbulence, scary landings and lots of delays - how much does the weather impact flying?",
+        "small": "Turbulence, scary landings and lots of delays - how much does the weather impact flying?"
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "26 mins"
+        }
+      }]
+    }, {
+      "id": "m0028n2l",
+      "title": "Access All Areas",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "EastEnders at 40: Behind the Scenes",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ks14bn.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0ks146z.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "EastEnders at 40: Behind the Scenes",
+      "synopses": {
+        "editorial": "On set with the soap's stars to see how the programme is celebrating its birthday.",
+        "small": "On set at Albert Square with the soap's stars to see how it's celebrating its birthday."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "17 mins"
+        }
+      }]
+    }, {
+      "id": "m0028k4b",
+      "title": "The Interview",
+      "type": "episode",
+      "programme_type": "narrative",
+      "editorial_title": "Geraint Thomas: Over the Finish Line",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kr2nvd.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kr2m47.jpg"
+      },
+      "live": false,
+      "subtitle": "Sport: Geraint Thomas: Over the Finish Line",
+      "synopses": {
+        "editorial": "Cycling superstar Geraint Thomas talks about retiring, and his life in elite sport.",
+        "small": "Cycling superstar Geraint Thomas talks about retiring, and his life in elite sport."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "23 mins"
+        }
+      }]
+    }, {
+      "id": "m0028dly",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Trolled to Death",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kqrnyy.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kqrnxj.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Trolled to Death",
+      "synopses": {
+        "editorial": "The tragic story of how 12-year-old Semina Halliwell ended up taking her own life.",
+        "small": "The tragic story of how 12-year-old Semina Halliwell ended up taking her own life."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "27 mins"
+        }
+      }]
+    }, {
+      "id": "m0028253",
+      "title": "Scams & Scandals ",
+      "type": "episode",
+      "programme_type": "sequential",
+      "editorial_title": "Botched: The Brazilian Butt Lift Nightmare",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0knfbw7.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0knfb3c.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "subtitle": "Botched: The Brazilian Butt Lift Nightmare",
+      "synopses": {
+        "editorial": "Disfigured and in agony. We investigate the man charging thousands for dodgy butt lifts.",
+        "small": "Disfigured and in agony. We investigate the man charging thousands for dodgy butt lifts."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "25 mins"
+        }
+      }]
+    }, {
+      "id": "m00283fb",
+      "title": "BBC News",
+      "type": "episode",
+      "programme_type": "self-contained",
+      "editorial_title": "DC Disaster: The Washington Plane Crash",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0knbnqk.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0knbnp8.jpg"
+      },
+      "labels": {
+        "category": "News"
+      },
+      "live": false,
+      "subtitle": "DC Disaster: The Washington Plane Crash",
+      "synopses": {
+        "editorial": "Tragedy in the skies - the shocking DC plane crash and its devastating aftermath.",
+        "small": "Tragedy in the skies - the shocking DC plane crash and its devastating aftermath."
+      },
+      "versions": [{
+        "kind": "original",
+        "duration": {
+          "text": "25 mins"
+        }
+      }]
+    }, {
+      "id": "m0028cq4",
+      "title": "The Families Taking TikTok to Court",
+      "type": "episode",
+      "programme_type": "one-off",
+      "images": {
+        "promotional_with_logo": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kqb8fb.jpg",
+        "standard": "https://ichef.bbci.co.uk/images/ic/{recipe}/p0kqbbrv.jpg"
+      },
+      "labels": {
+        "category": "Documentary"
+      },
+      "live": false,
+      "synopses": {
+        "small": "Hear from the four families suing TikTok for the alleged wrongful deaths of their children"
+      },
+      "versions": [{
+        "kind": "editorial",
+        "duration": {
+          "text": "24 mins"
+        }
+      }]
+    }]
+  }
+}
+</script>

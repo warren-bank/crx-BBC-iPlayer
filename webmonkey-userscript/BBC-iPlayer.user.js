@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BBC iPlayer
 // @description  Play media in external player.
-// @version      2.0.0
+// @version      2.0.1
 // @match        *://*.bbc.co.uk/iplayer/*
 // @icon         https://iplayer-web.files.bbci.co.uk/page-builder/44.2.1/img/icons/favicon.ico
 // @run-at       document_end
@@ -705,6 +705,7 @@ var init = function() {
   get_media_formats(function(formats) {
     if (!formats) return
 
+    add_default_trusted_type_policy()
     rewrite_page_dom(formats)
   })
 }

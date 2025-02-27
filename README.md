@@ -1,11 +1,17 @@
 ### [BBC iPlayer](https://github.com/warren-bank/crx-BBC-iPlayer/tree/webmonkey-userscript/es5)
 
-[Userscript](https://github.com/warren-bank/crx-BBC-iPlayer/raw/webmonkey-userscript/es5/webmonkey-userscript/BBC-iPlayer.user.js) for [www.bbc.co.uk/iplayer](https://www.bbc.co.uk/iplayer) to run in both:
-* the [WebMonkey](https://github.com/warren-bank/Android-WebMonkey) application for Android
-* the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) web browser extension for Chrome/Chromium
+[Userscript](https://github.com/warren-bank/crx-BBC-iPlayer/raw/webmonkey-userscript/es5/webmonkey-userscript/BBC-iPlayer.user.js) for [www.bbc.co.uk/iplayer](https://www.bbc.co.uk/iplayer) to run in:
+* the [WebMonkey](https://github.com/warren-bank/Android-WebMonkey) application
+  - for Android
+* the [Tampermonkey](https://www.tampermonkey.net/) web browser extension
+  - for [Firefox/Fenix](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+  - for [Chrome/Chromium](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* the [Violentmonkey](https://violentmonkey.github.io/) web browser extension
+  - for [Firefox/Fenix](https://addons.mozilla.org/firefox/addon/violentmonkey/)
+  - for [Chrome/Chromium](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
 
 Its purpose is to:
-* on a page for a video:
+* for both on-demand and live tv channels, on a page for a video:
   - replace the page's content with a list of all available media formats
   - for each available media format, display:
     * a brief summary of its attributes

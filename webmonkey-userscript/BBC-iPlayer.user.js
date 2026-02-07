@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BBC iPlayer
 // @description  Play media in external player.
-// @version      2.0.1
+// @version      2.0.2
 // @match        *://*.bbc.co.uk/iplayer/*
 // @icon         https://iplayer-web.files.bbci.co.uk/page-builder/44.2.1/img/icons/favicon.ico
 // @run-at       document_end
@@ -451,6 +451,16 @@ var get_media_formats = function(callback) {
 
 // ----------------------------------------------------------------------------- display results
 
+var get_series_url = function() {
+  var links = unsafeWindow.document.querySelectorAll('ul.breadcrumbs__list > li > a[href]')
+  var link
+  for (var i=0; i < links.length; i++) {
+    link = links[i].href
+    if (link.indexOf('/episodes/') >= 0) return link
+  }
+  return null
+}
+
 var format_subset_to_tablerows = function(format) {
   var keys_whitelist = ["protocol", "supplier", "transferFormat"]
   var keys = Object.keys(format)
@@ -527,6 +537,7 @@ var rewrite_page_dom = function(formats) {
   var head  = unsafeWindow.document.getElementsByTagName('head')[0]
   var body  = unsafeWindow.document.body
   var title = unsafeWindow.document.title
+  var series_url = get_series_url()
 
   var html = {
     "head": [
@@ -679,7 +690,11 @@ var rewrite_page_dom = function(formats) {
 
   if (title) {
     html.head.unshift('<title>'   + title + '</title>')
-    html.body.unshift('<div><h2>' + title + '</h2></div>')
+
+    if (series_url)
+      html.body.unshift('<div><h2><a href="' + series_url + '">' + title + '</a></h2></div>')
+    else
+      html.body.unshift('<div><h2>' + title + '</h2></div>')
   }
 
   head.innerHTML = '' + html.head.join("\n")
